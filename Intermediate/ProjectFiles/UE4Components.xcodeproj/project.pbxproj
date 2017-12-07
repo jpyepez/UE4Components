@@ -13,11 +13,13 @@
 		91F6DDE87770C5A225363F8F /* DefaultEditor.ini in Sources */ = {isa = PBXBuildFile; fileRef = 9F1A6E3CBDFC1C4D72A426E5 /* DefaultEditor.ini */; };
 		1CA02256E208777020EF3683 /* DefaultEngine.ini in Sources */ = {isa = PBXBuildFile; fileRef = 5873D72E80F5FC38B15BAE4B /* DefaultEngine.ini */; };
 		2C4E399CAD3837ECD0F8CBD6 /* DefaultGame.ini in Sources */ = {isa = PBXBuildFile; fileRef = 4E6FC01DBECF6EAFE3EBE34A /* DefaultGame.ini */; };
-		1D0756A416B65E2FB5BCE4CF /* UE4Components.Build.cs in Sources */ = {isa = PBXBuildFile; fileRef = 9B4837A481FBF5E6E248DE69 /* UE4Components.Build.cs */; };
-		BC361900503E33110928E17C /* UE4Components.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F78FBB6524984F847F38251 /* UE4Components.cpp */; };
-		8378ED11D10724D529EDE8DF /* UE4Components.h in Sources */ = {isa = PBXBuildFile; fileRef = 9C5DDE7789D3C67366BB5509 /* UE4Components.h */; };
-		003F9498C3E522C9B4C77CD8 /* UE4ComponentsGameModeBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50213F01030C5261901B19F4 /* UE4ComponentsGameModeBase.cpp */; };
-		6A0D6E742C0EEBC822E41092 /* UE4ComponentsGameModeBase.h in Sources */ = {isa = PBXBuildFile; fileRef = 738B1143CA1F2BD5E1062667 /* UE4ComponentsGameModeBase.h */; };
+		1D0756A416B65E2FB5BCE4CF /* CollidingPawn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B4837A481FBF5E6E248DE69 /* CollidingPawn.cpp */; };
+		BC361900503E33110928E17C /* CollidingPawn.h in Sources */ = {isa = PBXBuildFile; fileRef = 4F78FBB6524984F847F38251 /* CollidingPawn.h */; };
+		8378ED11D10724D529EDE8DF /* UE4Components.Build.cs in Sources */ = {isa = PBXBuildFile; fileRef = 9C5DDE7789D3C67366BB5509 /* UE4Components.Build.cs */; };
+		003F9498C3E522C9B4C77CD8 /* UE4Components.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50213F01030C5261901B19F4 /* UE4Components.cpp */; };
+		6A0D6E742C0EEBC822E41092 /* UE4Components.h in Sources */ = {isa = PBXBuildFile; fileRef = 738B1143CA1F2BD5E1062667 /* UE4Components.h */; };
+		93C56F5968F378E525A02DB6 /* UE4ComponentsGameModeBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 76AE9CA5DCB4B56B11AD8D78 /* UE4ComponentsGameModeBase.cpp */; };
+		FB0F9771EF441264E606E066 /* UE4ComponentsGameModeBase.h in Sources */ = {isa = PBXBuildFile; fileRef = 9E925F2F6C2B6CD35D5ACC1C /* UE4ComponentsGameModeBase.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,59 +29,62 @@
 		9F1A6E3CBDFC1C4D72A426E5 /* DefaultEditor.ini */ = {isa = PBXFileReference; explicitFileType = file.text; name = "DefaultEditor.ini"; path = "../../Config/DefaultEditor.ini"; sourceTree = SOURCE_ROOT; };
 		5873D72E80F5FC38B15BAE4B /* DefaultEngine.ini */ = {isa = PBXFileReference; explicitFileType = file.text; name = "DefaultEngine.ini"; path = "../../Config/DefaultEngine.ini"; sourceTree = SOURCE_ROOT; };
 		4E6FC01DBECF6EAFE3EBE34A /* DefaultGame.ini */ = {isa = PBXFileReference; explicitFileType = file.text; name = "DefaultGame.ini"; path = "../../Config/DefaultGame.ini"; sourceTree = SOURCE_ROOT; };
-		9B4837A481FBF5E6E248DE69 /* UE4Components.Build.cs */ = {isa = PBXFileReference; explicitFileType = file.text; name = "UE4Components.Build.cs"; path = "../../Source/UE4Components/UE4Components.Build.cs"; sourceTree = SOURCE_ROOT; };
-		4F78FBB6524984F847F38251 /* UE4Components.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; name = "UE4Components.cpp"; path = "../../Source/UE4Components/UE4Components.cpp"; sourceTree = SOURCE_ROOT; };
-		9C5DDE7789D3C67366BB5509 /* UE4Components.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; name = "UE4Components.h"; path = "../../Source/UE4Components/UE4Components.h"; sourceTree = SOURCE_ROOT; };
-		50213F01030C5261901B19F4 /* UE4ComponentsGameModeBase.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; name = "UE4ComponentsGameModeBase.cpp"; path = "../../Source/UE4Components/UE4ComponentsGameModeBase.cpp"; sourceTree = SOURCE_ROOT; };
-		738B1143CA1F2BD5E1062667 /* UE4ComponentsGameModeBase.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; name = "UE4ComponentsGameModeBase.h"; path = "../../Source/UE4Components/UE4ComponentsGameModeBase.h"; sourceTree = SOURCE_ROOT; };
-		26EF33FF2CA2B253744D5F92 /* UE4Components */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = UE4Components; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B4837A481FBF5E6E248DE69 /* CollidingPawn.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; name = "CollidingPawn.cpp"; path = "../../Source/UE4Components/CollidingPawn.cpp"; sourceTree = SOURCE_ROOT; };
+		4F78FBB6524984F847F38251 /* CollidingPawn.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; name = "CollidingPawn.h"; path = "../../Source/UE4Components/CollidingPawn.h"; sourceTree = SOURCE_ROOT; };
+		9C5DDE7789D3C67366BB5509 /* UE4Components.Build.cs */ = {isa = PBXFileReference; explicitFileType = file.text; name = "UE4Components.Build.cs"; path = "../../Source/UE4Components/UE4Components.Build.cs"; sourceTree = SOURCE_ROOT; };
+		50213F01030C5261901B19F4 /* UE4Components.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; name = "UE4Components.cpp"; path = "../../Source/UE4Components/UE4Components.cpp"; sourceTree = SOURCE_ROOT; };
+		738B1143CA1F2BD5E1062667 /* UE4Components.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; name = "UE4Components.h"; path = "../../Source/UE4Components/UE4Components.h"; sourceTree = SOURCE_ROOT; };
+		76AE9CA5DCB4B56B11AD8D78 /* UE4ComponentsGameModeBase.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; name = "UE4ComponentsGameModeBase.cpp"; path = "../../Source/UE4Components/UE4ComponentsGameModeBase.cpp"; sourceTree = SOURCE_ROOT; };
+		9E925F2F6C2B6CD35D5ACC1C /* UE4ComponentsGameModeBase.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; name = "UE4ComponentsGameModeBase.h"; path = "../../Source/UE4Components/UE4ComponentsGameModeBase.h"; sourceTree = SOURCE_ROOT; };
+		D6DF438CF75B8698D4E5DE42 /* UE4Components */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = UE4Components; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D409F9444F9D2A144B222481 = {
+		64DEAB534F978967DA209CCC = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC361900503E33110928E17C /* UE4Components.cpp in Sources */,
-				003F9498C3E522C9B4C77CD8 /* UE4ComponentsGameModeBase.cpp in Sources */,
+				1D0756A416B65E2FB5BCE4CF /* CollidingPawn.cpp in Sources */,
+				003F9498C3E522C9B4C77CD8 /* UE4Components.cpp in Sources */,
+				93C56F5968F378E525A02DB6 /* UE4ComponentsGameModeBase.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXContainerItemProxy section */
-		D71772C22808BB6C01D08E1C /* PBXContainerItemProxy */ = {
+		061468DDAC18F08AB7DFD20B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 5593CB2AA1A4AF9D90D7D614 /* Project object */;
+			containerPortal = D409F9444F9D2A144B222481 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F01D31DC2975D932958E1A4D;
+			remoteGlobalIDString = 5593CB2AA1A4AF9D90D7D614;
 			remoteInfo = "UE4Components_Build";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXTargetDependency section */
-		8C716FB348391394805E6C64 /* PBXTargetDependency */ = {
+		21EA4C1E8849ACBBE3538C59 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F01D31DC2975D932958E1A4D /* UE4Components_Build */;
-			targetProxy = D71772C22808BB6C01D08E1C /* PBXContainerItemProxy */;
+			target = 5593CB2AA1A4AF9D90D7D614 /* UE4Components_Build */;
+			targetProxy = 061468DDAC18F08AB7DFD20B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXGroup section */
-		0520C487CCF4842035268818 = {
+		A78310E2C649A0D7A1C7B2C3 = {
 			isa = PBXGroup;
 			children = (
-				B0ACFFB3A8BC8523DB278419 /* Source */,
-				C798D184C4D7F2B4F3FCCDAF /* Config */,
+				3564AAC68EC821B3DF4FAF37 /* Source */,
+				1B0BF50EC3F32E1136B2B035 /* Config */,
 				10E4841AB4578BB4EF66F8B7 /* UE4Components.uproject */,
-				4DC5E81330357AFE082E7EFC /* Products */,
+				FA40D198FB73CD2AA0673308 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		B0ACFFB3A8BC8523DB278419 = {
+		3564AAC68EC821B3DF4FAF37 = {
 			isa = PBXGroup;
 			children = (
-				0471A1792ECD6391EBB5611F /* UE4Components */,
+				AB1B66023F33C50F31F544C9 /* UE4Components */,
 				940AC694D607EE88F16DFF10 /* UE4Components.Target.cs */,
 				6EF1EB4E659A8BF798C986A9 /* UE4ComponentsEditor.Target.cs */,
 			);
@@ -87,20 +92,22 @@
 			path = "Source";
 			sourceTree = "<group>";
 		};
-		0471A1792ECD6391EBB5611F = {
+		AB1B66023F33C50F31F544C9 = {
 			isa = PBXGroup;
 			children = (
-				9B4837A481FBF5E6E248DE69 /* UE4Components.Build.cs */,
-				4F78FBB6524984F847F38251 /* UE4Components.cpp */,
-				9C5DDE7789D3C67366BB5509 /* UE4Components.h */,
-				50213F01030C5261901B19F4 /* UE4ComponentsGameModeBase.cpp */,
-				738B1143CA1F2BD5E1062667 /* UE4ComponentsGameModeBase.h */,
+				9B4837A481FBF5E6E248DE69 /* CollidingPawn.cpp */,
+				4F78FBB6524984F847F38251 /* CollidingPawn.h */,
+				9C5DDE7789D3C67366BB5509 /* UE4Components.Build.cs */,
+				50213F01030C5261901B19F4 /* UE4Components.cpp */,
+				738B1143CA1F2BD5E1062667 /* UE4Components.h */,
+				76AE9CA5DCB4B56B11AD8D78 /* UE4ComponentsGameModeBase.cpp */,
+				9E925F2F6C2B6CD35D5ACC1C /* UE4ComponentsGameModeBase.h */,
 			);
 			name = "UE4Components";
 			path = "Source/UE4Components";
 			sourceTree = "<group>";
 		};
-		C798D184C4D7F2B4F3FCCDAF = {
+		1B0BF50EC3F32E1136B2B035 = {
 			isa = PBXGroup;
 			children = (
 				9F1A6E3CBDFC1C4D72A426E5 /* DefaultEditor.ini */,
@@ -111,10 +118,10 @@
 			path = "Config";
 			sourceTree = "<group>";
 		};
-		4DC5E81330357AFE082E7EFC /* Products */ = {
+		FA40D198FB73CD2AA0673308 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				26EF33FF2CA2B253744D5F92 /* UE4Components */,
+				D6DF438CF75B8698D4E5DE42 /* UE4Components */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -122,10 +129,10 @@
 /* End PBXGroup section */
 
 /* Begin PBXLegacyTarget section */
-		F01D31DC2975D932958E1A4D /* UE4Components_Build */ = {
+		5593CB2AA1A4AF9D90D7D614 /* UE4Components_Build */ = {
 			isa = PBXLegacyTarget;
 			buildArgumentsString = "$(ACTION) $(UE_BUILD_TARGET_NAME) $(PLATFORM_NAME) $(UE_BUILD_TARGET_CONFIG) \"/Users/juanpabloyepez/Folders/Unreal/UE4Components/UE4Components.uproject\"";
-			buildConfigurationList = 21EA4C1E8849ACBBE3538C59 /* Build configuration list for PBXLegacyTarget "UE4Components_Build" */;
+			buildConfigurationList = 0DFB867C9E909641174148A9 /* Build configuration list for PBXLegacyTarget "UE4Components_Build" */;
 			buildPhases = (
 			);
 			buildToolPath = "/Users/Shared/Epic Games/UE_4.18/Engine/Build/BatchFiles/Mac/Build.sh";
@@ -139,28 +146,28 @@
 /* End PBXLegacyTarget section */
 
 /* Begin PBXNativeTarget section */
-		972BFBEC045FD079163C0959 /* UE4Components */ = {
+		26EF33FF2CA2B253744D5F92 /* UE4Components */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9102F2F26593AD752743B6AE /* Build configuration list for PBXNativeTarget "UE4Components" */;
+			buildConfigurationList = F01D31DC2975D932958E1A4D /* Build configuration list for PBXNativeTarget "UE4Components" */;
 			buildPhases = (
 			);
 			dependencies = (
-				8C716FB348391394805E6C64 /* PBXTargetDependency */,
+				21EA4C1E8849ACBBE3538C59 /* PBXTargetDependency */,
 			);
 			name = "UE4Components";
 			passBuildSettingsInEnvironment = 1;
 			productName = "UE4Components";
-			productReference = "26EF33FF2CA2B253744D5F92";
+			productReference = "D6DF438CF75B8698D4E5DE42";
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXNativeTarget section */
-		061468DDAC18F08AB7DFD20B /* UE4Components_Index */ = {
+		0520C487CCF4842035268818 /* UE4Components_Index */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D6DF438CF75B8698D4E5DE42 /* Build configuration list for PBXNativeTarget "UE4Components_Index" */;
+			buildConfigurationList = 4DC5E81330357AFE082E7EFC /* Build configuration list for PBXNativeTarget "UE4Components_Index" */;
 			buildPhases = (
-				D409F9444F9D2A144B222481 /* Sources */,
+				64DEAB534F978967DA209CCC /* Sources */,
 			);
 			dependencies = (
 			);
@@ -172,38 +179,38 @@
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		5593CB2AA1A4AF9D90D7D614 /* Project object */ = {
+		D409F9444F9D2A144B222481 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Epic Games, Inc.";
 				TargetAttributes = {
-					972BFBEC045FD079163C0959 = {
+					26EF33FF2CA2B253744D5F92 = {
 						ProvisioningStyle = Manual;
 					};
 				};
 			};
-			buildConfigurationList = 0DFB867C9E909641174148A9 /* Build configuration list for PBXProject "UE4Components" */;
+			buildConfigurationList = DF27D09C53B5DFE7736D2FD9 /* Build configuration list for PBXProject "UE4Components" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en
 			);
-			mainGroup = 0520C487CCF4842035268818;
-			productRefGroup = 4DC5E81330357AFE082E7EFC;
+			mainGroup = A78310E2C649A0D7A1C7B2C3;
+			productRefGroup = FA40D198FB73CD2AA0673308;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-			972BFBEC045FD079163C0959 /* UE4Components */,
-			F01D31DC2975D932958E1A4D /* UE4Components_Build */,
-			061468DDAC18F08AB7DFD20B /* UE4Components_Index */,
+			26EF33FF2CA2B253744D5F92 /* UE4Components */,
+			5593CB2AA1A4AF9D90D7D614 /* UE4Components_Build */,
+			0520C487CCF4842035268818 /* UE4Components_Index */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin XCBuildConfiguration section */
-		DF27D09C53B5DFE7736D2FD9 /* "DebugGame" */ = {
+		8C474D02824DDF17740DA112 /* "DebugGame" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -726,7 +733,7 @@
 			};
 			name = "DebugGame";
 		};
-		8C474D02824DDF17740DA112 /* "DebugGame Editor" */ = {
+		AB89C7D5E85C7C84C8656434 /* "DebugGame Editor" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -1249,7 +1256,7 @@
 			};
 			name = "DebugGame Editor";
 		};
-		AB89C7D5E85C7C84C8656434 /* "Development" */ = {
+		426B32762B8FCD74AFF27A03 /* "Development" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -1772,7 +1779,7 @@
 			};
 			name = "Development";
 		};
-		426B32762B8FCD74AFF27A03 /* "Development Editor" */ = {
+		764A06051D453A1EC620A105 /* "Development Editor" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -2295,7 +2302,7 @@
 			};
 			name = "Development Editor";
 		};
-		764A06051D453A1EC620A105 /* "Shipping" */ = {
+		C06E0E064407E86F9E817D14 /* "Shipping" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -2818,7 +2825,7 @@
 			};
 			name = "Shipping";
 		};
-		A78310E2C649A0D7A1C7B2C3 /* "DebugGame" */ = {
+		E447EBFFA00438404F087EE8 /* "DebugGame" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				VALID_ARCHS = "x86_64 arm64 armv7 armv7s";
@@ -2844,7 +2851,7 @@
 			};
 			name = "DebugGame";
 		};
-		E447EBFFA00438404F087EE8 /* "DebugGame Editor" */ = {
+		C6D5D92924C66DDE3B37D9D5 /* "DebugGame Editor" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				VALID_ARCHS = "x86_64";
@@ -2859,7 +2866,7 @@
 			};
 			name = "DebugGame Editor";
 		};
-		C6D5D92924C66DDE3B37D9D5 /* "Development" */ = {
+		A34810A1BA6056477724A411 /* "Development" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				VALID_ARCHS = "x86_64 arm64 armv7 armv7s";
@@ -2885,7 +2892,7 @@
 			};
 			name = "Development";
 		};
-		A34810A1BA6056477724A411 /* "Development Editor" */ = {
+		391928968392AA9D5707AC85 /* "Development Editor" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				VALID_ARCHS = "x86_64";
@@ -2900,7 +2907,7 @@
 			};
 			name = "Development Editor";
 		};
-		391928968392AA9D5707AC85 /* "Shipping" */ = {
+		B0ACFFB3A8BC8523DB278419 /* "Shipping" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				VALID_ARCHS = "x86_64 arm64 armv7 armv7s";
@@ -2926,7 +2933,7 @@
 			};
 			name = "Shipping";
 		};
-		FA40D198FB73CD2AA0673308 /* "DebugGame" */ = {
+		9D4D87093E4BE8DAA4050BB4 /* "DebugGame" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				VALID_ARCHS = "x86_64 arm64 armv7 armv7s";
@@ -2936,7 +2943,7 @@
 			};
 			name = "DebugGame";
 		};
-		9D4D87093E4BE8DAA4050BB4 /* "DebugGame Editor" */ = {
+		5BE5B8337327AB04DE7E5EB5 /* "DebugGame Editor" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				VALID_ARCHS = "x86_64";
@@ -2946,7 +2953,7 @@
 			};
 			name = "DebugGame Editor";
 		};
-		5BE5B8337327AB04DE7E5EB5 /* "Development" */ = {
+		D42556B44B196EE75806F108 /* "Development" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				VALID_ARCHS = "x86_64 arm64 armv7 armv7s";
@@ -2956,7 +2963,7 @@
 			};
 			name = "Development";
 		};
-		D42556B44B196EE75806F108 /* "Development Editor" */ = {
+		8708958D1E1278E580163D01 /* "Development Editor" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				VALID_ARCHS = "x86_64";
@@ -2966,7 +2973,7 @@
 			};
 			name = "Development Editor";
 		};
-		8708958D1E1278E580163D01 /* "Shipping" */ = {
+		C798D184C4D7F2B4F3FCCDAF /* "Shipping" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				VALID_ARCHS = "x86_64 arm64 armv7 armv7s";
@@ -2976,7 +2983,7 @@
 			};
 			name = "Shipping";
 		};
-		64DEAB534F978967DA209CCC /* "DebugGame" */ = {
+		25CBA853871B94563D996E08 /* "DebugGame" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				VALID_ARCHS = "x86_64 arm64 armv7 armv7s";
@@ -3002,7 +3009,7 @@
 			};
 			name = "DebugGame";
 		};
-		25CBA853871B94563D996E08 /* "DebugGame Editor" */ = {
+		8413F2488887EBC066738DB2 /* "DebugGame Editor" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				VALID_ARCHS = "x86_64";
@@ -3017,7 +3024,7 @@
 			};
 			name = "DebugGame Editor";
 		};
-		8413F2488887EBC066738DB2 /* "Development" */ = {
+		F534D84EB1E9059299EFA43F /* "Development" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				VALID_ARCHS = "x86_64 arm64 armv7 armv7s";
@@ -3043,7 +3050,7 @@
 			};
 			name = "Development";
 		};
-		F534D84EB1E9059299EFA43F /* "Development Editor" */ = {
+		1269CA12CBD342D492D31498 /* "Development Editor" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				VALID_ARCHS = "x86_64";
@@ -3058,7 +3065,7 @@
 			};
 			name = "Development Editor";
 		};
-		1269CA12CBD342D492D31498 /* "Shipping" */ = {
+		0471A1792ECD6391EBB5611F /* "Shipping" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				VALID_ARCHS = "x86_64 arm64 armv7 armv7s";
@@ -3087,55 +3094,55 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0DFB867C9E909641174148A9 /* Build configuration list for PBXProject "UE4Components" */ = {
+		DF27D09C53B5DFE7736D2FD9 /* Build configuration list for PBXProject "UE4Components" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DF27D09C53B5DFE7736D2FD9 /* "DebugGame" */,
-				8C474D02824DDF17740DA112 /* "DebugGame Editor" */,
-				AB89C7D5E85C7C84C8656434 /* "Development" */,
-				426B32762B8FCD74AFF27A03 /* "Development Editor" */,
-				764A06051D453A1EC620A105 /* "Shipping" */,
+				8C474D02824DDF17740DA112 /* "DebugGame" */,
+				AB89C7D5E85C7C84C8656434 /* "DebugGame Editor" */,
+				426B32762B8FCD74AFF27A03 /* "Development" */,
+				764A06051D453A1EC620A105 /* "Development Editor" */,
+				C06E0E064407E86F9E817D14 /* "Shipping" */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Development;
 		};
-		21EA4C1E8849ACBBE3538C59 /* Build configuration list for PBXLegacyTarget "UE4Components_Build" */ = {
+		0DFB867C9E909641174148A9 /* Build configuration list for PBXLegacyTarget "UE4Components_Build" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FA40D198FB73CD2AA0673308 /* "DebugGame" */,
-				9D4D87093E4BE8DAA4050BB4 /* "DebugGame Editor" */,
-				5BE5B8337327AB04DE7E5EB5 /* "Development" */,
-				D42556B44B196EE75806F108 /* "Development Editor" */,
-				8708958D1E1278E580163D01 /* "Shipping" */,
+				9D4D87093E4BE8DAA4050BB4 /* "DebugGame" */,
+				5BE5B8337327AB04DE7E5EB5 /* "DebugGame Editor" */,
+				D42556B44B196EE75806F108 /* "Development" */,
+				8708958D1E1278E580163D01 /* "Development Editor" */,
+				C798D184C4D7F2B4F3FCCDAF /* "Shipping" */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Development;
 		};
-		9102F2F26593AD752743B6AE /* Build configuration list for PBXNativeTarget "UE4Components" */ = {
+		F01D31DC2975D932958E1A4D /* Build configuration list for PBXNativeTarget "UE4Components" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A78310E2C649A0D7A1C7B2C3 /* "DebugGame" */,
-				E447EBFFA00438404F087EE8 /* "DebugGame Editor" */,
-				C6D5D92924C66DDE3B37D9D5 /* "Development" */,
-				A34810A1BA6056477724A411 /* "Development Editor" */,
-				391928968392AA9D5707AC85 /* "Shipping" */,
+				E447EBFFA00438404F087EE8 /* "DebugGame" */,
+				C6D5D92924C66DDE3B37D9D5 /* "DebugGame Editor" */,
+				A34810A1BA6056477724A411 /* "Development" */,
+				391928968392AA9D5707AC85 /* "Development Editor" */,
+				B0ACFFB3A8BC8523DB278419 /* "Shipping" */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Development;
 		};
-		D6DF438CF75B8698D4E5DE42 /* Build configuration list for PBXNativeTarget "UE4Components_Index" */ = {
+		4DC5E81330357AFE082E7EFC /* Build configuration list for PBXNativeTarget "UE4Components_Index" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				64DEAB534F978967DA209CCC /* "DebugGame" */,
-				25CBA853871B94563D996E08 /* "DebugGame Editor" */,
-				8413F2488887EBC066738DB2 /* "Development" */,
-				F534D84EB1E9059299EFA43F /* "Development Editor" */,
-				1269CA12CBD342D492D31498 /* "Shipping" */,
+				25CBA853871B94563D996E08 /* "DebugGame" */,
+				8413F2488887EBC066738DB2 /* "DebugGame Editor" */,
+				F534D84EB1E9059299EFA43F /* "Development" */,
+				1269CA12CBD342D492D31498 /* "Development Editor" */,
+				0471A1792ECD6391EBB5611F /* "Shipping" */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Development;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 5593CB2AA1A4AF9D90D7D614 /* Project object */;
+	rootObject = D409F9444F9D2A144B222481 /* Project object */;
 }
