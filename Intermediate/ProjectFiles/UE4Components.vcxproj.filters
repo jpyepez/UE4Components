@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<None Include="..\..\UE4Components.uproject" />
+		<Filter Include="Source">
+			<UniqueIdentifier>{886AE8E9-D2FE-4D9C-9524-14EA12E151A3}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Source\UE4Components.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<None Include="..\..\Source\UE4ComponentsEditor.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<Filter Include="Config">
+			<UniqueIdentifier>{A14D1E00-94D6-42F1-AC9E-E80A3089FBE6}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Config\DefaultEditor.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultEngine.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultGame.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultInput.ini">
+			<Filter>Config</Filter>
+		</None >
+		<Filter Include="Source\UE4Components">
+			<UniqueIdentifier>{B9D94D14-70AC-4362-8C50-E05D117929FF}</UniqueIdentifier>
+		</Filter>
+		<ClCompile Include="..\..\Source\UE4Components\CollidingPawn.cpp">
+			<Filter>Source\UE4Components</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\UE4Components\CollidingPawn.h">
+			<Filter>Source\UE4Components</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\UE4Components\CollidingPawnMovementComponent.cpp">
+			<Filter>Source\UE4Components</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\UE4Components\CollidingPawnMovementComponent.h">
+			<Filter>Source\UE4Components</Filter>
+		</ClInclude >
+		<None Include="..\..\Source\UE4Components\UE4Components.Build.cs">
+			<Filter>Source\UE4Components</Filter>
+		</None >
+		<ClCompile Include="..\..\Source\UE4Components\UE4Components.cpp">
+			<Filter>Source\UE4Components</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\UE4Components\UE4Components.h">
+			<Filter>Source\UE4Components</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\UE4Components\UE4ComponentsGameModeBase.cpp">
+			<Filter>Source\UE4Components</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\UE4Components\UE4ComponentsGameModeBase.h">
+			<Filter>Source\UE4Components</Filter>
+		</ClInclude >
+	</ItemGroup>
+</Project>
