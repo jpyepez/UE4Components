@@ -7,6 +7,7 @@
 #include "Runtime/CoreUObject/Public/UObject/UObjectGlobals.h"
 #include "Runtime/CoreUObject/Public/UObject/ConstructorHelpers.h"
 #include "Particles/ParticleSystemComponent.h"
+#include "CollidingPawnMovementComponent.h"
 #include "CollidingPawn.generated.h"
 
 UCLASS()
@@ -31,4 +32,12 @@ public:
 
 	UParticleSystemComponent *OurParticleSystem;
 
+	class UCollidingPawnMovementComponent* OurMovementComponent;
+
+	virtual UPawnMovementComponent* GetMovementComponent() const override;
+
+	void MoveForward(float AxisValue);
+	void MoveRight(float AxisValue);
+	void Turn(float AxisValue);
+	void ParticleToggle();
 };
